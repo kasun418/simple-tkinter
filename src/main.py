@@ -35,7 +35,7 @@ def select_colour(event, colour,field):
 root = Tk()
 
 root.configure(background="#e2e2ff")
-root.title("SANDUNI WANASINGHE") 
+root.title("TITLE") 
 root.geometry("505x350")
 root.resizable(False,False)
 
@@ -54,7 +54,7 @@ mouse_move_strings = StringVar()
 
 lbl_top = Label(top_frame, textvariable=mouse_move_strings,width=60,height=1,background='#00ffff')
 lbl_top.grid(row=0, columnspan=3)
-lbl_top.bind("<Enter>",lambda event: mouse_enter_leave(event,"S14959",mouse_move_strings))
+lbl_top.bind("<Enter>",lambda event: mouse_enter_leave(event,"VALUE",mouse_move_strings))
 lbl_top.bind("<Leave>",lambda event: mouse_enter_leave(event,"",mouse_move_strings))
 
 # Entry field feature
@@ -111,7 +111,7 @@ button12 = Button(middle_frame, text=' Reverse ', fg='black', bg='#8080ff',
                  command=lambda: reverse(), height=2, width=15).grid(row=5, column=2)
 
 # bottem frame features
-name_string = StringVar(bottem_frame, value='SANDUNI WANASINGHE')
+name_string = StringVar(bottem_frame, value='VALUE')
 name_field = Entry(bottem_frame, textvariable=name_string, font="none 9 bold", width=60, foreground='white')
 name_field.grid(row=0, columnspan=8)
 
