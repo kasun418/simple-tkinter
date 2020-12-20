@@ -1,2 +1,2 @@
 # simple-tkinter
-This is simple tkinter example for beginners
+This is a simple `tkinter` example for beginners
